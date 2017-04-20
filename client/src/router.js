@@ -10,11 +10,13 @@ export default new Router({
       component: require('@/components/Welcome')
     },
     {
-      path: '/host',
+      name: 'host',
+      path: '/host/:gameId',
       component: require('@/components/Host')
     },
     {
-      path: '/player',
+      name: 'player',
+      path: '/player/:gameId',
       component: require('@/components/Player')
     }
   ]

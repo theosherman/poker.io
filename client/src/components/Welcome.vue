@@ -43,10 +43,10 @@ export default {
 
   methods: {
     joinGame() {
-
+      this.$router.push({ name: 'player', params: { gameId: this.gameId }})
     },
     createGame() {
-
+      this.$router.push({ name: 'host', params: { gameId: this.gameId }})
     }
   }
 
